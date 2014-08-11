@@ -12,7 +12,7 @@ rm(org)
 
 subs$datetime <- as.POSIXct(strptime(paste(subs$Date, subs$Time), "%Y-%m-%d %H:%M:%S"))
 # Construct diagram
-plot(subs$Global_active_power~subs$datetime, main="Global Active Power",
+plot(subs$Global_active_power~subs$datetime, main="",
      xlab="", ylab="Global Active Power (kilowatts)", type="l")
 
 # Save
